@@ -21,6 +21,9 @@
     <ClCompile Include="..\..\..\..\src\bacnet\basic\object\netport.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\src\bacnet\bacapp.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\..\demo\server\server.h" />

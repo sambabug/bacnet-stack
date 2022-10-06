@@ -30,19 +30,19 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
@@ -50,7 +50,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <UseDotNetNativeToolchain>true</UseDotNetNativeToolchain>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
@@ -181,6 +181,7 @@
     <ClCompile Include="..\..\..\..\src\bacnet\bactimevalue.c" />
     <ClCompile Include="..\..\..\..\src\bacnet\basic\sys\bigend.c" />
     <ClCompile Include="..\..\..\..\src\bacnet\basic\sys\days.c" />
+    <ClCompile Include="..\..\..\..\src\bacnet\dailyschedule.c" />
     <ClCompile Include="..\..\..\..\src\bacnet\datalink\bvlc.c" />
     <ClCompile Include="..\..\..\..\src\bacnet\cov.c" />
     <ClCompile Include="..\..\..\..\src\bacnet\datalink\crc.c" />
@@ -216,6 +217,7 @@
     <ClCompile Include="..\..\..\..\src\bacnet\timestamp.c" />
     <ClCompile Include="..\..\..\..\src\bacnet\timesync.c" />
     <ClCompile Include="..\..\..\..\src\bacnet\basic\tsm\tsm.c" />
+    <ClCompile Include="..\..\..\..\src\bacnet\weeklyschedule.c" />
     <ClCompile Include="..\..\..\..\src\bacnet\whohas.c" />
     <ClCompile Include="..\..\..\..\src\bacnet\whois.c" />
     <ClCompile Include="..\..\..\..\src\bacnet\wp.c" />
@@ -253,6 +255,7 @@
     <ClInclude Include="..\..\..\..\src\bacnet\config.h" />
     <ClInclude Include="..\..\..\..\src\bacnet\cov.h" />
     <ClInclude Include="..\..\..\..\src\bacnet\crc.h" />
+    <ClInclude Include="..\..\..\..\src\bacnet\dailyschedule.h" />
     <ClInclude Include="..\..\..\..\src\bacnet\datalink.h" />
     <ClInclude Include="..\..\..\..\src\bacnet\datetime.h" />
     <ClInclude Include="..\..\..\..\src\bacnet\dcc.h" />
@@ -296,6 +299,7 @@
     <ClInclude Include="..\..\..\..\src\bacnet\txbuf.h" />
     <ClInclude Include="..\..\..\..\src\bacnet\ucix.h" />
     <ClInclude Include="..\..\..\..\src\bacnet\version.h" />
+    <ClInclude Include="..\..\..\..\src\bacnet\weeklyschedule.h" />
     <ClInclude Include="..\..\..\..\src\bacnet\whohas.h" />
     <ClInclude Include="..\..\..\..\src\bacnet\whois.h" />
     <ClInclude Include="..\..\..\..\src\bacnet\wp.h" />
