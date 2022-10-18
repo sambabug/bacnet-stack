@@ -17,7 +17,7 @@ option(
 option(
   BAC_ROUTING
   "enable bac routing"
-  ON)
+  OFF)
 
 option(
   BACNET_PROPERTY_LISTS
