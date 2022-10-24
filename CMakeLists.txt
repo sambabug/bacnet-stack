@@ -32,7 +32,7 @@ option(
 option(
   BACNET_BUILD_BACPOLL_APP
   "compile the bacpoll app"
-  ON)
+  OFF)
 
 option(
   BACDL_ETHERNET
@@ -63,6 +63,16 @@ option(
   BACDL_NONE
   "compile without datalink"
   OFF)
+
+option(
+  BACAPP_PRINT_ENABLED
+  "compile without print enabled"
+  ON)
+
+option(
+  BACNET_IP_DEBUG
+  "compile without ip debug enabled"
+  ON)
 
 set(BACNET_PROTOCOL_REVISION 19)
 
@@ -459,6 +469,10 @@ target_compile_definitions(
   $<$<BOOL:${BACNET_PROPERTY_LISTS}>:BACNET_PROPERTY_LISTS>
   $<$<BOOL:${BAC_ROUTING}>:BAC_ROUTING>
   $<$<NOT:$<BOOL:${BUILD_SHARED_LIBS}>>:BACNET_STACK_STATIC_DEFINE>
+  
+  $<$<BOOL:${BACAPP_PRINT_ENABLED}>:BACAPP_PRINT_ENABLED>
+  $<$<BOOL:${BACNET_IP_DEBUG}>:BACNET_IP_DEBUG>
+  
   PRIVATE
   PRINT_ENABLED=1)
 target_link_libraries(${PROJECT_NAME} PUBLIC Threads::Threads)
@@ -751,3 +765,5 @@ message(STATUS "BACNET: BACDL_ARCNET:...................\"${BACDL_ARCNET}\"")
 message(STATUS "BACNET: BACDL_MSTP:.....................\"${BACDL_MSTP}\"")
 message(STATUS "BACNET: BACDL_ETHERNET:.................\"${BACDL_ETHERNET}\"")
 message(STATUS "BACNET: BACDL_NONE:.....................\"${BACDL_NONE}\"")
+message(STATUS "BACNET: BACAPP_PRINT_ENABLED:...........\"${BACAPP_PRINT_ENABLED}\"")
+message(STATUS "BACNET: BACNET_IP_DEBUG:................\"${BACNET_IP_DEBUG}\"")
